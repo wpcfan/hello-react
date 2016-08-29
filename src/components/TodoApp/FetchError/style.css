@@ -4,7 +4,7 @@
 .err-card > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('../../assets/error.jpg') center / cover;
+  background: url('../../../assets/error.jpg') center / cover;
 }
 .err-card > .mdl-card__menu {
   color: #fff;

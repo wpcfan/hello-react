@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import * as actions from '../actions';
-import { getVisibleTodos, getErrorMessage, getIsFetching } from '../reducers';
+import * as actions from '../../actions';
+import { getVisibleTodos, getErrorMessage, getIsFetching } from '../../reducers';
 import TodoList from './TodoList';
 import FetchError from './FetchError';
 

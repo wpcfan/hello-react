@@ -3,7 +3,6 @@ import { persistState } from 'redux-devtools';
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import todoApp from '../reducers';
-import DevTools from '../containers/DevTools';
 
 const middlewares = [thunk, createLogger];
 
@@ -11,7 +10,7 @@ const enhancer = compose(
   // Middleware you want to use in development:
   applyMiddleware(...middlewares),
   // Required! Enable Redux DevTools with the monitors you chose
-  DevTools.instrument(),
+  window.devToolsExtension ? window.devToolsExtension() : f => f,
   // Optional. Lets you write ?debug_session=<key> in address bar to persist debug sessions
   persistState(getDebugSessionKey())
 );

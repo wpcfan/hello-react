@@ -9,7 +9,9 @@ const App = () => (
     <Header />
     <Drawer />
     <main className="mdl-layout__content">
-      <TodoApp />
+      <div className="page-content">
+        <TodoApp />
+      </div>
     </main>
     <Footer />
   </div>

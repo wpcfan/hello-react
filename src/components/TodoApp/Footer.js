@@ -3,16 +3,16 @@ import FilterLink from './FilterLink';
 
 const Footer = () => (
   <div className="mdl-cell mdl-cell--12-col">
-    Show:
+    显示:
     {" "}
     <FilterLink filter="all">
-      All
+      全部
     </FilterLink>
     <FilterLink filter="active">
-      Active
+      活动
     </FilterLink>
     <FilterLink filter="completed">
-      Completed
+      完成
     </FilterLink>
   </div>
 );

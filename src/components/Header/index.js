@@ -8,9 +8,9 @@ const Header = () => (
       <span className="mdl-layout-title">My Todo App</span>
       <div className="mdl-layout-spacer"></div>
       <nav className="mdl-navigation">
-        <Link className="mdl-navigation__link" to="/">Home</Link>
-        <Link className="mdl-navigation__link" to="/todo">Todo</Link>
-        <Link className="mdl-navigation__link" to="/about">About</Link>
+        <Link className="mdl-navigation__link" to="/">首页</Link>
+        <Link className="mdl-navigation__link" to="/todo">登录</Link>
+        <Link className="mdl-navigation__link" to="/about">关于我们</Link>
       </nav>
     </div>
   </header>

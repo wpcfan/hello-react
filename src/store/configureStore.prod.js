@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import { routerMiddleware } from 'react-router-redux'
-import thunk from 'redux-thunk'
-import makeRootReducer from './reducers'
+import { routerMiddleware } from 'react-router-redux';
+import thunk from 'redux-thunk';
+import makeRootReducer from './reducers';
 import todoApp from '../reducers';
 
 const middlewares = [thunk];

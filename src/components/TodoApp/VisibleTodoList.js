@@ -37,10 +37,13 @@ class VisibleTodoList extends Component {
     }
 
     return (
-      <TodoList
-        todos={todos}
-        onTodoClick={toggleTodo}
-      />
+      <div>
+        <div className="mdl-spinner mdl-js-spinner"></div>
+        <TodoList
+          todos={todos}
+          onTodoClick={toggleTodo}
+        />
+      </div>
     );
   }
 }
